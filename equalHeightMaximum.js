@@ -1,5 +1,5 @@
-function equalHeight(main, submain) {
-
+function equalHeightMaximum(main, submain) {
+    
     'use strict';
 
     var elements        = $(main).find(submain),
@@ -7,10 +7,10 @@ function equalHeight(main, submain) {
         maximumHeight   = null;
 
     elements.each(function () {
-        
-        $(this).removeAttr('style');
 
         heights.push($(this).height());
+
+        $(this).removeAttr('style');
 
     });
 
